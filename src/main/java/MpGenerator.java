@@ -39,7 +39,6 @@ public class MpGenerator {
         gc.setBaseColumnList(true);// XML columList
         // .setKotlin(true) 是否生成 kotlin 代码
         gc.setAuthor("dingxu");
-
         // 自定义文件命名，注意 %s 会自动填充表实体属性！
          gc.setMapperName("%sMapper");
          gc.setXmlName("%sMapper");
