@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dxt.fiction.mapper.ContractMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dxt.fiction.entity.Contract">
+        <id column="contract_id" property="contractId" />
+        <result column="content_id" property="contentId" />
+        <result column="content_name" property="contentName" />
+        <result column="contract_num" property="contractNum" />
+        <result column="my_mainpart" property="myMainpart" />
+        <result column="cooperation_mainpart" property="cooperationMainpart" />
+        <result column="expander" property="expander" />
+        <result column="contacter" property="contacter" />
+        <result column="mobile" property="mobile" />
+        <result column="email" property="email" />
+        <result column="address" property="address" />
+        <result column="settlement_style" property="settlementStyle" />
+        <result column="benchmark_data" property="benchmarkData" />
+        <result column="settlement_cycle" property="settlementCycle" />
+        <result column="reconciliation_date" property="reconciliationDate" />
+        <result column="pay_date" property="payDate" />
+        <result column="start_date" property="startDate" />
+        <result column="end_date" property="endDate" />
+        <result column="valid_date" property="validDate" />
+        <result column="sign_date" property="signDate" />
+        <result column="execute_status" property="executeStatus" />
+        <result column="remarks" property="remarks" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        contract_id AS contractId, content_id AS contentId, content_name AS contentName, contract_num AS contractNum, my_mainpart AS myMainpart, cooperation_mainpart AS cooperationMainpart, expander, contacter, mobile, email, address, settlement_style AS settlementStyle, benchmark_data AS benchmarkData, settlement_cycle AS settlementCycle, reconciliation_date AS reconciliationDate, pay_date AS payDate, start_date AS startDate, end_date AS endDate, valid_date AS validDate, sign_date AS signDate, execute_status AS executeStatus, remarks
+    </sql>
+
+</mapper>

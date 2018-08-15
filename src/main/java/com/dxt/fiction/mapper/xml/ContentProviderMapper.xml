@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dxt.fiction.mapper.ContentProviderMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dxt.fiction.entity.ContentProvider">
+        <id column="content_id" property="contentId" />
+        <result column="content_name" property="contentName" />
+        <result column="contacter" property="contacter" />
+        <result column="mobile" property="mobile" />
+        <result column="qq" property="qq" />
+        <result column="email" property="email" />
+        <result column="cooperation_status" property="cooperationStatus" />
+        <result column="settlement_cycle" property="settlementCycle" />
+        <result column="update_date" property="updateDate" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        content_id AS contentId, content_name AS contentName, contacter, mobile, qq, email, cooperation_status AS cooperationStatus, settlement_cycle AS settlementCycle, update_date AS updateDate
+    </sql>
+
+</mapper>
